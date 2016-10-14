@@ -55,6 +55,8 @@ In the Ubuntu system, open the *Terminal* application and type the following com
         * Target System: `Ralink RT288x/RT3xxx`
         * Subtarget: `MT7688 based boards`
         * Target Profile: `LinkIt7688`
+    * Within the `Ralink SDK` menu, set the options as below:
+        * `mtk-linkit` should be built-in (i.e.: it should have an `*` next to it)
     * Save and exit (**use the deafult config file name without changing it**)
 8. Start the compilation process:
     
