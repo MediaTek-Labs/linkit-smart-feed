@@ -26,7 +26,7 @@ define Package/mtk-linkit
 	+kmod-sdhci-mt7620 +kmod-usb-storage \
 	+kmod-video-core +kmod-video-uvc \
 	+kmod-sound-core +kmod-sound-mtk +madplay-alsa +alsa-utils \
-	+mtk-linkit-webui +mtk-sdk-wifi +tcpdump-mini \
+	+mtk-linkit-webui +mtk-linkit-wifi +tcpdump-mini \
 	+mtk-linkit-utils
 endef
 
