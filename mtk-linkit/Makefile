@@ -9,11 +9,12 @@ PKG_RELEASE:=1
 include $(INCLUDE_DIR)/package.mk
 
 define Package/mtk-linkit
+  SECTION:=ralink
+  CATEGORY:=Ralink SDK
   TITLE:=MTK LinkIt Smart board support package
-  HIDDEN:=1
   DEPENDS:=@TARGET_ramips_mt7688_LinkIt7688 \
-  	+gdbserver +curl +strace +coreutils +coreutils-stty \
-  	+avahi-nodbus-daemon +mountd +mjpg-streamer \
+	+gdbserver +curl +strace +coreutils +coreutils-stty \
+	+avahi-nodbus-daemon +mountd +mjpg-streamer \
 	+uhttpd +rpcd +rpcd-mod-iwinfo +git +git-http +samba36-server \
 	+python +python-pyserial +python-pip +hidapi \
 	+libmraa +libupm +node +node-hid +node-cylon-firmata +yunbridge \
@@ -26,9 +27,10 @@ define Package/mtk-linkit
 	+kmod-video-core +kmod-video-uvc \
 	+kmod-sound-core +kmod-sound-mtk +madplay-alsa +alsa-utils \
 	+mtk-linkit-webui +mtk-sdk-wifi +tcpdump-mini
+endef
 
-  CATEGORY:=Base system
-  DEFAULT:=y
+define Package/mtk-linkit/description
+  Meta-package to install all components of the shipping LinkIt 7688 SDK
 endef
 
 define Build/Prepare
